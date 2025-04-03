@@ -24,7 +24,7 @@ def dfs(graph, start_node):
     if current_node not in visited:
       print(current_node, end=' ')
       visited.add(current_node)
-      for neighbor in reversed(graph[current_node]):
+      for neighbor in reversed(graph[current_node]): # reversed() -> returns reversed iterated object
         stack.append(neighbor)
 
 print("DFS traversal order(using stack): ")
